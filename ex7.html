@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    run();
+    function chiaHet5(num) {
+        if (num%5 == 0){
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+    function chiahet3(num) {
+        if (num%3 == 0){
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+    function run() {
+        for (let i =1; i<=100;i++){
+            if (chiahet3(i)&&chiaHet5(i)){
+                document.write("fizzbuzz,");
+            }
+            else if (chiaHet5(i)){
+                document.write("buzz,");
+            }
+            else if (chiahet3(i)){
+                document.write("fizz,");
+            } else {
+                document.write(i+",");
+            }
+
+        }
+    }
+</script>
+</body>
+</html>
