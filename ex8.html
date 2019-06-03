@@ -8,11 +8,11 @@
 <input type="button" onclick="play()" value="Play">
 <script>
     function play() {
-        let a = parseInt(prompt("Nhập đầu khoảng:"));
-        let b = parseInt(prompt("Nhập cuối khoảng:"));
+        let head = parseInt(prompt("Nhập đầu khoảng:"));
+        let foot = parseInt(prompt("Nhập cuối khoảng:"));
         let num = parseInt(prompt("Nhập số bạn đoán:"));
         let life = 3;
-        let result = Math.round(Math.random()*(b-a)+a);
+        let result = Math.round(Math.random()*(foot-head)+head);
         console.log(result)
         for (let i = 3;i >=0 ;i--){
             if (life == 0) {
